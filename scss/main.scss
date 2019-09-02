@@ -1,0 +1,10 @@
+@import "config", "global", "normalize", "card", "project", "about";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}

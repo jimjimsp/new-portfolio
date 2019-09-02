@@ -1,0 +1,28 @@
+.about {
+  background-color: $green-base;
+  height: 800px;
+  width: 100%;
+  padding: 50px;
+
+  .wrapper-about {
+    display: flex;
+    justify-content: space-evenly;
+
+    .left {
+      background-color: rgba($color: #68ff7c, $alpha: 0.2);
+      border: 1px solid $green-hl;
+      padding: 40px 60px;
+      width: 40vw;
+      .info {
+      }
+    }
+
+    .right {
+      background-color: green;
+      padding: 40px 60px;
+      width: 40vw;
+      .list {
+      }
+    }
+  }
+}

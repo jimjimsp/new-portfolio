@@ -1,0 +1,81 @@
+.projects {
+  text-decoration: none;
+
+  .wrapper-projects {
+    width: 700px;
+    margin: auto;
+
+    .item {
+      margin: 150px 0;
+    }
+
+    .title {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .box {
+      transition: all 2s;
+      width: 700px;
+      height: 350px;
+      margin: auto;
+      margin-top: 0;
+
+      .text {
+        position: absolute;
+        background-color: $black;
+        width: 350px;
+        height: 350px;
+        margin-top: 0px;
+        z-index: -1;
+        padding: 80px;
+        color: white;
+        text-decoration: none;
+      }
+
+      .image {
+        transition: all 2s;
+        width: 700px;
+        height: 350px;
+        background-size: 700px 350px;
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-position-x: 350px;
+        }
+      }
+    }
+
+    .descript {
+      text-align: center;
+      font-family: "Avenir Book", Helvetica, Arial, sans-serif;
+      font-size: 1rem;
+      margin-top: 0.5vw;
+      letter-spacing: 1px;
+      font-weight: 100;
+      transform: scale(1, 1.1);
+      cursor: default;
+
+      .info {
+        position: relative;
+        float: left;
+        left: 4px;
+      }
+      .date {
+        float: right;
+      }
+    }
+  }
+}
+
+.halffloor {
+  background-image: url("../res/halffloor_banner.gif");
+}
+
+.box_game {
+  background-image: url("../res/box_game.gif");
+}
+
+.qr_code {
+  background-image: url("../res/QuickQR banner.png");
+}

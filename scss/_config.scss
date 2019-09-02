@@ -1,0 +1,52 @@
+// Constants, mixins etc
+
+$green-base: #16752e;
+$green-hl: #68ff7c;
+$black: #0c0f0c;
+
+.animate {
+  transition: 0.5s;
+
+  // SLIDE IN TRANSITIONS //
+  // Reveal from the left
+  &.from-left {
+    opacity: 0;
+    transform: translateX(-10%);
+    &.lazyloaded {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  // Reveal from the right
+  &.from-right {
+    opacity: 0;
+    transform: translateX(10%);
+    &.lazyloaded {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  // Reveal from the top
+  &.from-top {
+    opacity: 0;
+    transform: translateY(-10%);
+    &.lazyloaded {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // Reveal from the bottom
+  &.from-bottom {
+    opacity: 0;
+    transform: translateY(10%);
+    &.lazyloaded {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+//===============================================
