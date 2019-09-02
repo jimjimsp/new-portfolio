@@ -1,8 +1,13 @@
 // Constants, mixins etc
 
-$green-base: #16752e;
-$green-hl: #68ff7c;
+$green-base: #259860;
+$green-hl: #42ff91;
 $black: #0c0f0c;
+$white: #fcfff6;
+
+@mixin easeOut {
+  transition: all 0.3s ease-out;
+}
 
 .animate {
   transition: 0.5s;

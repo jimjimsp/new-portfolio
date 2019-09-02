@@ -1,0 +1,38 @@
+footer {
+  height: 100px;
+  background-color: $green-hl;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .icons {
+    color: $green-hl;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    order: 1;
+  }
+
+  i {
+    @include easeOut;
+    font-size: 2rem;
+    color: $green-base;
+
+    &:hover {
+      color: $white;
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+
+  .zdog-canvas-small {
+    background-color: pink;
+    order: 2;
+  }
+
+  p {
+    color: $green-base;
+    font-size: 1.2rem;
+    order: 3;
+  }
+}
